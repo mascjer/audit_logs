@@ -12,10 +12,8 @@ import os
 
 def get_snowflake_connection():
 # Connection details
-    #USER = os.environ['USER']
-    #PASSWORD = os.environ['PASSWORD']
-    USER = 'MASCJER'
-    PASSWORD = 'LucySnickers!1216'
+    USER = os.environ['USER']
+    PASSWORD = os.environ['PASSWORD']
     ACCOUNT = "sandbox_chrobinson.east-us-2.azure"
     WAREHOUSE = "SURFACETRANS_WAREHOUSE"
     SCHEMA = "BASE"
