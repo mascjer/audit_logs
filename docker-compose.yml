@@ -1,0 +1,13 @@
+version: '3'
+services:
+  apsched:
+    restart: on-failure:3
+    build: ./app
+    image: audit_log_app
+    ports:
+      - 3002:3002
+    volumes:
+      - ./:/app
+    env_file:
+      - config/secrets
+    command: python app/importer_app.py
